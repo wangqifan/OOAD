@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  toutiao:
+    image: toutiao:latest
+    container_name: toutiao
+    ports:
+      - "8080:8080"
+    links:
+      - mysql
+      - redis
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    ports:
+      - "3306:3306"
+    volumes:
+        - "./data:/var/lib/mysql"
+    environment:
+      "MYSQL_ROOT_PASSWORD" : "000000"
+  redis:
+    image: redis
+    container_name: redis
