@@ -1,7 +1,13 @@
-# toutiao
+# 资讯分享
   资讯分享网站
 
 #### 使用
+
+下载
+~~~
+git clone https://github.com/wangqifan/OOAD.git
+cd OOAD
+~~~
 
 构建镜像
 ~~~
@@ -13,12 +19,10 @@
 docker-compose up -d
 ~~~
 
+停止
+~~~
+docker-compose down
+~~~
 
 页面展示
 ------
-
-
-<image src="https://github.com/wangqifan/toutiao/blob/master/home.PNG" width=500>
-  <image src="https://github.com/wangqifan/toutiao/blob/master/detial.PNG" width=500>
-    <image src="https://github.com/wangqifan/toutiao/blob/master/messagelist.PNG" width=500>
-      <image src="https://github.com/wangqifan/toutiao/blob/master/messagedetail.PNG" width=500>
